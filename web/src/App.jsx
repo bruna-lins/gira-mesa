@@ -27,7 +27,9 @@ function App() {
 
   return (
     <Container maxWidth="sm" sx={{ mt: 8 }}>
-      {saude && (
+      {saude === null ? (
+        <Alert severity="info"> verificando a conexão com a API... </Alert>
+      ) : (
         <Alert severity={saude.ok ? "success" : "error"}>
           {saude.mensagem}
         </Alert>
