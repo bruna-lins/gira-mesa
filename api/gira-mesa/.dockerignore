@@ -1,0 +1,14 @@
+# build local da nossa máquina -- o Dockerfile gera um target/ novo lá dentro
+target/
+
+# configurações de IDE (IntelliJ, VS Code, Eclipse/STS) -- não servem pra rodar
+.idea/
+.vscode/
+.settings/
+.classpath
+.project
+*.iml
+
+# documentação -- não faz parte da aplicação
+HELP.md
+docs/
